@@ -12,7 +12,7 @@ services:
       - ./db:/data/db
       - ./configdb:/data/configdb
     environment:
-      MONGO_INITDB_ROOT_USERNAME: jabes1993
+      MONGO_INITDB_ROOT_USERNAME: "user"
       MONGO_INITDB_ROOT_PASSWORD: 201812345678
 
   mongo-express:
@@ -21,7 +21,7 @@ services:
     ports:
       - 8081:8081
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: jabes1993
+      ME_CONFIG_MONGODB_ADMINUSERNAME: "user"
       ME_CONFIG_MONGODB_ADMINPASSWORD: 201812345678
 
   web:
